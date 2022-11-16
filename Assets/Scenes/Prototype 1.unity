@@ -261,9 +261,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _poolContainer: {fileID: 11400000, guid: 3e3f16881a929fe42b945db491ef69de, type: 2}
   _vehicleTransform: {fileID: 1745614285}
-  _timeUntilNextSpawn: 1.5
+  _timeUntilNextSpawn: 1
   _generationOffset: 200
-  _minObsToSpawnOnXLine: 1
+  _minObsToSpawnOnXLine: 2
   _maxObsToSpawnOnXLine: 3
   _initialOffset: 30
 --- !u!850595691 &481223275
@@ -437,10 +437,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 883524872, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
-      propertyPath: m_Mass
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 5907119739666972919, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: _roadSpawner
       value: 
@@ -530,15 +526,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3451230849714748972, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.490141
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451230849714748972, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.7612343
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451230849714748972, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 16.302181
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3451230849714748972, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
       propertyPath: m_LocalRotation.w

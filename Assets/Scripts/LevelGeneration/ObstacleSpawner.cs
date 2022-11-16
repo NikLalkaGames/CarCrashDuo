@@ -38,14 +38,14 @@ namespace LevelGeneration
         
         private void InitialGeneration()
         {
-            while (_initialOffset < 200f)
+            while (_initialOffset < _generationOffset)
             {
                 for (int i = 0; i < Random.Range(_minObsToSpawnOnXLine, _maxObsToSpawnOnXLine); i++)
                 {
                     GenerateRandomObstacle(_initialOffset);
                 }
 
-                _initialOffset += 30f;
+                _initialOffset += 40f;
             }
         }
         
