@@ -96,5 +96,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af3abe9a2b2c4bb780fd0a276f7bdb85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _vehicleTransform: {fileID: 0}
+  _followedTransform: {fileID: 0}
   _smoothSpeed: 1
