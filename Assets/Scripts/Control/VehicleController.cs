@@ -4,29 +4,22 @@ namespace Control
 {
     public class VehicleController : MonoBehaviour
     {
-        private float _horizontalInput;
+        [SerializeField] private InputHandler _inputHandler;
 
         [SerializeField] private float _turnSpeed;
 
         [SerializeField] private float _forwardSpeed;
-    
-        // Update is called once per frame
+
+        [SerializeField] private Rigidbody _rigidbody;
+        
         private void Update()
         {
-            ListenInput();
-            Movement();
-        }
-
-        private void ListenInput()
-        {
-            _horizontalInput = Input.GetAxis("Horizontal");
-
-        }
-
-        private void Movement()
-        {
             transform.Translate(Time.deltaTime * _forwardSpeed * Vector3.forward);
-            transform.Rotate(Vector3.up, Time.deltaTime * _turnSpeed * _horizontalInput);
+            transform.Rotate(Vector3.up, Time.deltaTime * _turnSpeed * _inputHandler.InputAxis);
+            
+            // _rigidbody.MovePosition(transform.position + Time.fixedDeltaTime * _forwardSpeed * Vector3.forward);
+            // var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * _inputHandler.InputAxis, Vector3.up);
+            // _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
     }
 }
