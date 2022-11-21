@@ -8,9 +8,7 @@ namespace Code.LevelGeneration
     {
         [SerializeField] private List<Transform> _roads;
 
-        private static readonly float _offset = 200f;
-    
-        // save value of next road for spawning object
+        private const float OFFSET = 200f;
 
         private void Start()
         {
@@ -26,7 +24,7 @@ namespace Code.LevelGeneration
         {
             var movedRoad = _roads[0];
             _roads.Remove(movedRoad);
-            var nextDepthPos = _roads.Last().position.z + _offset;
+            var nextDepthPos = _roads.Last().position.z + OFFSET;
             movedRoad.position = new Vector3(0, 0, nextDepthPos);
             _roads.Add(movedRoad);
         }

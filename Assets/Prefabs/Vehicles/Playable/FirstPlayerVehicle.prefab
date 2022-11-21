@@ -398,11 +398,11 @@ GameObject:
   - component: {fileID: 3313442307395238052}
   - component: {fileID: 1745614282}
   - component: {fileID: 883524872}
-  - component: {fileID: 5907119739666972919}
   - component: {fileID: 1003984010}
+  - component: {fileID: 7411822254551125266}
   m_Layer: 6
   m_Name: FirstPlayerVehicle
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -521,19 +521,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 80
   m_CollisionDetection: 0
---- !u!114 &5907119739666972919
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178130}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d704db1955594df1a79428d206db5c9d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _roadSpawner: {fileID: 0}
 --- !u!114 &1003984010
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -547,6 +534,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inputType: Horizontal
+--- !u!114 &7411822254551125266
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70ea62e1f2384c3f8093fd7836e02e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _uiScore: {fileID: 0}
 --- !u!1 &2801325797856607763
 GameObject:
   m_ObjectHideFlags: 0
