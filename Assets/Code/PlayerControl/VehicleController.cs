@@ -1,11 +1,11 @@
+using System;
 using UnityEngine;
 
 namespace Code.PlayerControl
 {
+    [Obsolete]
     public class VehicleController : MonoBehaviour
     {
-        [SerializeField] private InputHandler _inputHandler;
-
         [SerializeField] private float _turnSpeed;
 
         [SerializeField] private float _forwardSpeed;
@@ -14,13 +14,11 @@ namespace Code.PlayerControl
         
         private void FixedUpdate()
         {
-            //transform.Translate(Time.deltaTime * _forwardSpeed * Vector3.forward);
-
             var newPos = _rigidbody.position +
                            transform.TransformDirection(Time.fixedDeltaTime * _forwardSpeed * Vector3.forward);
             _rigidbody.MovePosition(newPos);
-            
-            var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * _inputHandler.HzAxis, Vector3.up);
+
+            var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * Input.GetAxis("Horizontal"), Vector3.up);
             _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
     }

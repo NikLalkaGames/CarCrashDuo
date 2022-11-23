@@ -12,7 +12,7 @@ namespace Code.LevelGeneration
 
         [SerializeField] private PoolContainer _poolContainer;
 
-        [SerializeField] private Transform _vehicleTransform;
+        [SerializeField] private Transform _levelTransform;
 
         private float _timer = 0f;
 
@@ -75,7 +75,7 @@ namespace Code.LevelGeneration
 
         private Vector3 GetSpawnPosition(float offset)
         {
-            var vp = _vehicleTransform.position;
+            var vp = _levelTransform.position;
             return new Vector3(Random.Range(-8, 8), vp.y, vp.z + offset);
         }
     }
