@@ -12,14 +12,16 @@ namespace Code.PlayerControl
 
         [SerializeField] private Rigidbody _rigidbody;
         
-        private void Update()
+        private void FixedUpdate()
         {
-            transform.Translate(Time.deltaTime * _forwardSpeed * Vector3.forward);
-            transform.Rotate(Vector3.up, Time.deltaTime * _turnSpeed * _inputHandler.InputAxis);
+            //transform.Translate(Time.deltaTime * _forwardSpeed * Vector3.forward);
+
+            var newPos = _rigidbody.position +
+                           transform.TransformDirection(Time.fixedDeltaTime * _forwardSpeed * Vector3.forward);
+            _rigidbody.MovePosition(newPos);
             
-            // _rigidbody.MovePosition(transform.position + Time.fixedDeltaTime * _forwardSpeed * Vector3.forward);
-            // var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * _inputHandler.InputAxis, Vector3.up);
-            // _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
+            var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * _inputHandler.HzAxis, Vector3.up);
+            _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
     }
 }

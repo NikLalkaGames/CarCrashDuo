@@ -84,7 +84,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438844376347150769}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: -4.933}
+  m_LocalPosition: {x: -0, y: 0, z: -5}
   m_LocalScale: {x: 10, y: 74.61115, z: 12.908057}
   m_Children: []
   m_Father: {fileID: 1014797949310951927}
@@ -115,7 +115,6 @@ GameObject:
   - component: {fileID: 5228779153486686191}
   - component: {fileID: 8138413220931814020}
   - component: {fileID: 3598181040322394578}
-  - component: {fileID: 8922042006446718874}
   m_Layer: 0
   m_Name: GroundRoad
   m_TagString: Untagged
@@ -202,22 +201,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.000002, y: 2.220446e-16, z: 10.000002}
   m_Center: {x: -0.00000047683716, y: 0, z: -0.000000029802322}
---- !u!54 &8922042006446718874
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1823073071176704752}
-  serializedVersion: 2
-  m_Mass: 1000000
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &3397083859601528955
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +226,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3397083859601528955}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 4.91}
+  m_LocalPosition: {x: -0, y: 0, z: 5}
   m_LocalScale: {x: 10, y: 74.61115, z: 12.908057}
   m_Children: []
   m_Father: {fileID: 1014797949310951927}

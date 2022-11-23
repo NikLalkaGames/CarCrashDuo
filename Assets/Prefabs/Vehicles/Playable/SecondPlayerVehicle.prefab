@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3383734}
   - component: {fileID: 2382754}
   - component: {fileID: 2720045576004100963}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -108,7 +108,7 @@ GameObject:
   - component: {fileID: 3395236}
   - component: {fileID: 2394562}
   - component: {fileID: 3682553966762660890}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -204,7 +204,7 @@ GameObject:
   - component: {fileID: 3332162}
   - component: {fileID: 2350806}
   - component: {fileID: 8147241306112228353}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -300,7 +300,7 @@ GameObject:
   - component: {fileID: 3341378}
   - component: {fileID: 2319836}
   - component: {fileID: 5618744408507249295}
-  m_Layer: 6
+  m_Layer: 8
   m_Name: Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _inputHandler: {fileID: 2105982990909291193}
   _turnSpeed: 50
-  _forwardSpeed: 20
+  _forwardSpeed: 0
   _rigidbody: {fileID: 7683283155442004352}
 --- !u!114 &2105982990909291193
 MonoBehaviour:
@@ -517,7 +517,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c76e470d9634ba7b4708b5b6d3f918f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputType: HorizontalTwo
+  _horizontalInput: HorizontalTwo
+  _verticalInput: Vertical
 --- !u!54 &7683283155442004352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -526,13 +527,13 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 194810}
   serializedVersion: 2
-  m_Mass: 1000
+  m_Mass: 1500
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 80
+  m_Constraints: 0
   m_CollisionDetection: 0
 --- !u!114 &8084034330135533867
 MonoBehaviour:
@@ -558,7 +559,7 @@ GameObject:
   - component: {fileID: 4288276208018298273}
   - component: {fileID: 8467362333616347173}
   - component: {fileID: 917275562593894632}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Front_angle
   m_TagString: Untagged
   m_Icon: {fileID: 0}

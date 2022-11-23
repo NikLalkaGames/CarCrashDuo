@@ -4,13 +4,18 @@ namespace Code.PlayerControl
 {
     public class InputHandler : MonoBehaviour
     {
-        [SerializeField] private string _inputType;
+        [SerializeField] private string _horizontalInput;
+        
+        [SerializeField] private string _verticalInput;
 
-        public float InputAxis { get; private set; }
+        public float HzAxis { get; private set; }
+        
+        public float VrAxis { get; private set; }
 
         private void Update()
         {
-            InputAxis = Input.GetAxis(_inputType);
+            //VrAxis = Input.GetAxis(_verticalInput);
+            HzAxis = Input.GetAxis(_horizontalInput);
         }
     }
 }
