@@ -1,7 +1,7 @@
 ﻿using Code.Common.ObjectPool;
 using UnityEngine;
 
-namespace Code.LevelGeneration
+namespace Code.Level
 {
     public class GarbageCleaner : MonoBehaviour
     {

@@ -4,7 +4,7 @@ using Code.Common.ObjectPool;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-namespace Code.LevelGeneration
+namespace Code.Level
 {
     public class ObstacleSpawner : MonoBehaviour
     {

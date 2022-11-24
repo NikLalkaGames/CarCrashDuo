@@ -2,7 +2,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace Code.LevelGeneration
+namespace Code.Level
 {
     public class RoadSpawner : MonoBehaviour
     {

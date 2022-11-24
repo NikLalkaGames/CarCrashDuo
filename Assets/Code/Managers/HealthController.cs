@@ -1,8 +1,7 @@
-﻿using System;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-namespace Code.PlayerControl
+namespace Code.Managers
 {
     public class HealthController : MonoBehaviour
     {

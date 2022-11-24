@@ -1,7 +1,7 @@
 ﻿using Code.UI;
 using UnityEngine;
 
-namespace Code.PlayerControl
+namespace Code.Managers
 {
     public class ScoreCounter : MonoBehaviour
     {

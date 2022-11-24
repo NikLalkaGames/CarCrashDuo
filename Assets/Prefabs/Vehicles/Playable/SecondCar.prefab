@@ -341,7 +341,7 @@ GameObject:
   - component: {fileID: 7683283155442004352}
   - component: {fileID: 5823683617164292005}
   m_Layer: 6
-  m_Name: SecondPlayerVehicle
+  m_Name: SecondCar
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace Code.LevelGeneration
+namespace Code.Level
 {
     public class RoadSpawnDetector : MonoBehaviour
     {

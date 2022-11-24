@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2821227768462129885}
   - component: {fileID: 883524872}
   m_Layer: 6
-  m_Name: FirstPlayerVehicle
+  m_Name: FirstCar
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
