@@ -129,6 +129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HORIZONTAL: Horizontal
   VERTICAL: Vertical
+  BREAK_KEY_CODE: 32
   _motorForce: 1500
   _breakForce: 3000
   _maxSteerAngle: 30
@@ -151,8 +152,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.159401, y: 2.2409244, z: 5.4388084}
-  m_Center: {x: 0, y: 1.465112, z: 0.007741928}
+  m_Size: {x: 2.5995224, y: 2.2409244, z: 5.4388084}
+  m_Center: {x: -0.015269399, y: 1.465112, z: 0.007741928}
 --- !u!54 &883524872
 Rigidbody:
   m_ObjectHideFlags: 0

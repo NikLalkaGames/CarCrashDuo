@@ -1,55 +1,53 @@
-﻿using UnityEngine;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 namespace Code.UI
 {
     public class PauseMenu : MonoBehaviour
     {
-        private bool _gameIsPaused;
+        private static bool _gameIsPaused = false;
+        public GameObject pauseMenuUI;
 
-        [SerializeField] private GameObject _pauseMenu;
-
-        [SerializeField] private Transform _viewTransform;
-
-        private Vector3 _viewPos;
-
-        private void Update()
+        // Update is called once per frame
+        void Update()
         {
-            if (Input.GetKeyDown(KeyCode.Escape))
-            {
-                if (_gameIsPaused) Resume();
-                else Pause();
+            if (Input.GetKeyDown(KeyCode.Escape)){
+                if (_gameIsPaused){
+                    Resume();
+                } else {
+                    Pause();
+                }
             }
         }
 
-        public void Resume()
-        {
-            _viewTransform.position = _viewPos;
-            _pauseMenu.SetActive(false);
+        public void Resume(){
+            pauseMenuUI.SetActive(false);
             Time.timeScale = 1f;
             _gameIsPaused = false;
         }
 
-        private void Pause()
-        {
-            _viewPos = _viewTransform.position;
-            _viewTransform.position = new Vector3(_viewPos.x, _viewPos.y, 0);
-            _pauseMenu.SetActive(true);
+        void Pause(){
+            pauseMenuUI.SetActive(true);
             Time.timeScale = 0f;
             _gameIsPaused = true;
         }
 
-        public void ReturnToMenu()
-        {
+        public void GoToMenu(){
             _gameIsPaused = false;
             Time.timeScale = 1f;
-            SceneManager.LoadScene("EntryScene");
+            SceneManager.LoadScene("MainMenu");
+            Debug.Log("Return to Menu");
         }
 
-        public void Exit()
-        {
-            Application.Quit();
+        public void ExitGame(){
+            Application.Quit ();
+            Debug.Log("Quit");
         }
 
+        public void Restart(){
+            Debug.Log("Reloading scene");
+            Time.timeScale = 1f;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 }

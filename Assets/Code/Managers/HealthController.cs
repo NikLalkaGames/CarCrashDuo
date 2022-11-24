@@ -7,11 +7,14 @@ namespace Code.Managers
     {
         [SerializeField] private Slider UIHealth;
 
+        [Range(0,100)]
         [SerializeField] private float _maxHealth;
 
         private void Start()
         {
+            UIHealth.minValue = 0;
             UIHealth.maxValue = _maxHealth;
+            UpdateHealth(_maxHealth);
         }
 
         public void ChangeHealth(float amountToChange)      // can be negative
@@ -22,19 +25,6 @@ namespace Code.Managers
         public void UpdateHealth(float healthValueToUpdate)
         {
             UIHealth.value = healthValueToUpdate;
-        }
-
-        private void Update()
-        {
-            if (Input.GetKeyDown(KeyCode.H))
-            {
-                UpdateHealth(_maxHealth);
-            }
-            
-            if (Input.GetKeyDown(KeyCode.R))
-            {
-                ChangeHealth(-30);
-            }
         }
     }
 }

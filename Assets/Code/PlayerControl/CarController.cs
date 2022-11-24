@@ -6,6 +6,7 @@ namespace Code.PlayerControl
     {
         [SerializeField] private string HORIZONTAL = "Horizontal";  // const input axis
         [SerializeField] private string VERTICAL = "Vertical";      // const input axis
+        [SerializeField] private KeyCode BREAK_KEY_CODE;
 
         private float _horizontalInput;
         private float _verticalInput;
@@ -40,16 +41,14 @@ namespace Code.PlayerControl
         {
             _horizontalInput = Input.GetAxis(HORIZONTAL);
             _verticalInput = Input.GetAxis(VERTICAL);
-            _isBreaking = Input.GetKey(KeyCode.Space);
+            _isBreaking = Input.GetKey(BREAK_KEY_CODE);
         }
 
         private void HandleMotor()
         {
             _frontLeftWheelCollider.motorTorque = _verticalInput * _motorForce;       // forward mv control by player
             _frontRightWheelCollider.motorTorque = _verticalInput * _motorForce;      // forward mv control by player
-            //_frontLeftWheelCollider.motorTorque = _motorForce;                          // automatic forward movement 
-            //_frontRightWheelCollider.motorTorque = _motorForce;                         // automatic forward movement
-
+            
             _currentBreakForce = _isBreaking ? _breakForce : 0f;
             ApplyBreaking();
         }

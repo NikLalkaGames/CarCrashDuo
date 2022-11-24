@@ -452,6 +452,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HORIZONTAL: HorizontalTwo
   VERTICAL: VerticalTwo
+  BREAK_KEY_CODE: 305
   _motorForce: 1500
   _breakForce: 3000
   _maxSteerAngle: 30
@@ -490,8 +491,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3.1628075, y: 2.1453218, z: 5.323662}
-  m_Center: {x: 0, y: 1.4675517, z: 0}
+  m_Size: {x: 2.5915313, y: 2.1453218, z: 5.323662}
+  m_Center: {x: -0.01503396, y: 1.4675517, z: 0}
 --- !u!1 &789035826603836384
 GameObject:
   m_ObjectHideFlags: 0

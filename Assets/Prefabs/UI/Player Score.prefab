@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Score:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 656ffaf90487c324689f04f39c621feb, type: 2}
+  m_sharedMaterial: {fileID: -4125765405154463140, guid: 656ffaf90487c324689f04f39c621feb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -143,6 +143,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2088171555402150912}
+  - component: {fileID: 7381164351527295739}
   m_Layer: 5
   m_Name: Player Score
   m_TagString: Untagged
@@ -171,6 +172,19 @@ RectTransform:
   m_AnchoredPosition: {x: 68.17737, y: -34.60388}
   m_SizeDelta: {x: 136.35474, y: 69.2077}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &7381164351527295739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088171555402150915}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 919f80a0cb8ca3646acf846a3aa3a4a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _scoreUIValue: {fileID: 2088171555637855577}
 --- !u!1 &2088171555637855579
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,8 +252,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 656ffaf90487c324689f04f39c621feb, type: 2}
+  m_sharedMaterial: {fileID: -4125765405154463140, guid: 656ffaf90487c324689f04f39c621feb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -270,8 +284,8 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
