@@ -60,9 +60,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65e1715d1d664ff68417faa679fcd913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _activePlayerTransforms:
-  - {fileID: 0}
-  - {fileID: 0}
+  _runtimeCars: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
 --- !u!114 &1838581998
 MonoBehaviour:
   m_ObjectHideFlags: 0

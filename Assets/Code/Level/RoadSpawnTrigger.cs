@@ -11,7 +11,7 @@ namespace Code.Level
         [SerializeField] private int _numberOfCars;
         private int _detectionCounter;
 
-        private void OnTriggerEnter(Collider other)
+        private void OnTriggerExit(Collider other)
         {
             if (!other.CompareTag("Player")) return;
             

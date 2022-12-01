@@ -49,8 +49,10 @@ MonoBehaviour:
   - {fileID: 1990293589767515956, guid: 367149bd17c4d4d4e8868ec6a5cf8d45, type: 3}
   - {fileID: 515175755739571116, guid: 46f9eda5f45584fb3ad05abcd7af6df2, type: 3}
   _levelTransform: {fileID: 0}
-  _timeUntilNextSpawn: 2
-  _generationOffset: 200
-  _minObsToSpawnOnXLine: 1
-  _maxObsToSpawnOnXLine: 2
+  _timeUntilNextSpawn: 1.8
+  _generationOffset: 100
+  _minObsToSpawnOnHorizontalLine: 1
+  _maxObsToSpawnOnHorizontalLine: 3
   _initialOffset: 30
+  leftHorizontalBoundary: -8
+  RightHorizontalBoundary: 8

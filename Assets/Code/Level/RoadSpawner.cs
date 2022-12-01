@@ -10,24 +10,25 @@ namespace Code.Level
     public class RoadSpawner : MonoBehaviour
     {
         [SerializeField] private PlayerPlaces _playerPlaces;
-
         [SerializeField] private GameObject _roadPrefab;
-        
         [SerializeField] private List<GameObject> _spawnedRoads;
-        
-        [SerializeField] private float _spawningOffset = 200f;
+        [SerializeField] private float _spawningOffset = 100f;
+        [SerializeField] private float _carAllowedDistance = 200f;
 
-        public bool RequireDistanceSpawning =>
+        private bool RequiredDistanceSpawning =>
             _playerPlaces.PlayerCarsOrdered.First().position.z - _playerPlaces.PlayerCarsOrdered.Last().position.z >
-            _spawningOffset;
+            _carAllowedDistance;
         
         private void Start()
         {
+            // initial spawn location
             _spawnedRoads.Add(PoolManager.SpawnObject(_roadPrefab, _roadPrefab.transform.position, Quaternion.identity));
+            SpawnNextRoad();
+            SpawnNextRoad();
             SpawnNextRoad();
         }
 
-        private void SpawnNextRoad()
+        public void SpawnNextRoad()
         {
             Vector3 nextSpawnPos = _spawnedRoads.Last().transform.position;
             _spawnedRoads.Add(
@@ -40,7 +41,7 @@ namespace Code.Level
 
         public void HandleRequirementForRoadSpawning()
         {
-            if (RequireDistanceSpawning)
+            if (RequiredDistanceSpawning)
             {
                 SpawnNextRoad();
             }

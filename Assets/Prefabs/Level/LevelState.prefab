@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 469484470079905320}
   - component: {fileID: 469484470079905321}
+  - component: {fileID: 1266617312}
   m_Layer: 0
   m_Name: LevelState
   m_TagString: Untagged
@@ -43,10 +44,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a778b2f122164ef189457d41a9f29f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _firstPlayerPosition:
-    PositionNumber: 0
-    Transform: {fileID: 0}
-  _secondPlayerPosition:
-    PositionNumber: 0
-    Transform: {fileID: 0}
   _uiPlayerPos: {fileID: 0}
+  PlayerCars: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
+--- !u!114 &1266617312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469484470079905323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99c03f3e109545b3b6df95096b10e063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _levelTime: 120
+  _uiLevelTimerFirst: {fileID: 0}
+  _uiLevelTimerSecond: {fileID: 0}
