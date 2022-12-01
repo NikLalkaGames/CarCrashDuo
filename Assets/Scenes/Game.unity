@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -495,7 +495,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266617311}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99c03f3e109545b3b6df95096b10e063, type: 3}
   m_Name: 
@@ -747,7 +747,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 314674224599891675, guid: 83f51f41e1100f04bab1a6473e289d59, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 314674224599891675, guid: 83f51f41e1100f04bab1a6473e289d59, type: 3}
       propertyPath: m_LocalPosition.x
@@ -956,13 +956,9 @@ PrefabInstance:
       propertyPath: _levelTransform
       value: 
       objectReference: {fileID: 270743791}
-    - target: {fileID: 7537155155440163088, guid: efdd4e8cf65eedc45a24d29f14414329, type: 3}
-      propertyPath: _maxObsToSpawnOnXLine
-      value: 2
-      objectReference: {fileID: 0}
     - target: {fileID: 7537155155440163089, guid: efdd4e8cf65eedc45a24d29f14414329, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7537155155440163089, guid: efdd4e8cf65eedc45a24d29f14414329, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1017,10 +1013,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 4779449072012694189, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -5
-      objectReference: {fileID: 0}
     - target: {fileID: 8159147294202252496, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}
       propertyPath: _playerPlaces
       value: 
@@ -1071,7 +1063,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8159147294202252498, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}
       propertyPath: m_Name
-      value: LevelStream
+      value: LevelStream_RoadSpawner
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}

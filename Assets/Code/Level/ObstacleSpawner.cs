@@ -8,9 +8,7 @@ namespace Code.Level
 {
     public class ObstacleSpawner : MonoBehaviour
     {
-        private readonly List<GameObject> _obstacleCollection = new List<GameObject>();
-
-        [SerializeField] private PoolContainer _poolContainer;
+        [SerializeField] private List<GameObject> _obstaclePrefabCollection = new List<GameObject>();
 
         [SerializeField] private Transform _levelTransform;
 
@@ -28,9 +26,6 @@ namespace Code.Level
 
         private void Start()
         {
-            foreach (var obs in _poolContainer.Pools)  
-                _obstacleCollection.Add(obs.Prefab);
-
             InitialGeneration();
         }
         
@@ -71,7 +66,7 @@ namespace Code.Level
                 Quaternion.identity);
         }
         
-        private GameObject GetRandomObject() => _obstacleCollection[Random.Range(0, _obstacleCollection.Count)];
+        private GameObject GetRandomObject() => _obstaclePrefabCollection[Random.Range(0, _obstaclePrefabCollection.Count)];
 
         private Vector3 GetSpawnPosition(float offset)
         {

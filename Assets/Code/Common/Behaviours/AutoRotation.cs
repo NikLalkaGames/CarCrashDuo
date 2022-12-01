@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class AutoRotation : MonoBehaviour
 {
-    void Update()
+    private void Update()
     {
         transform.RotateAround(Vector3.up,  Time.deltaTime);
     }
