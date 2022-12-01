@@ -346,7 +346,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 194810, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_Name
-      value: BlueCar
+      value: BluePlayerCar
       objectReference: {fileID: 0}
     - target: {fileID: 428284, guid: 09082afec7b5e824ca611a0cc3264bcd, type: 3}
       propertyPath: m_RootOrder
@@ -416,7 +416,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 178130, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_Name
-      value: RedCar
+      value: RedPlayerCar
       objectReference: {fileID: 0}
     - target: {fileID: 436868, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
       propertyPath: m_RootOrder
@@ -470,10 +470,6 @@ PrefabInstance:
       propertyPath: UIHealth
       value: 
       objectReference: {fileID: 308868323}
-    - target: {fileID: 9138996906392871291, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
-      propertyPath: _maxHealth
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70bf34f6c25c948458f254e87188b00b, type: 3}
 --- !u!114 &1026895393 stripped
@@ -507,6 +503,17 @@ MonoBehaviour:
   _levelTime: 120
   _uiLevelTimerFirst: {fileID: 408743488}
   _uiLevelTimerSecond: {fileID: 408743489}
+--- !u!114 &1266617313 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+  m_PrefabInstance: {fileID: 469484469000616242}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1266617311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a778b2f122164ef189457d41a9f29f54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1368192327
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,9 +843,25 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars
+      value: 
+      objectReference: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
       propertyPath: _uiPlayerPos
       value: 
       objectReference: {fileID: 408743492}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1745614285}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 798559256}
     - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
       propertyPath: _firstPlayerPosition.Transform
       value: 
@@ -860,6 +883,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2475282852457998895, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
+      propertyPath: _runtimeCars
+      value: 
+      objectReference: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
     - target: {fileID: 2475282852457998895, guid: 9b28254f4b4fa6e40afedc46cb00fdff, type: 3}
       propertyPath: _activePlayerTransforms.Array.data[0]
       value: 
@@ -994,6 +1021,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 8159147294202252496, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}
+      propertyPath: _playerPlaces
+      value: 
+      objectReference: {fileID: 1266617313}
     - target: {fileID: 8159147294202252497, guid: a18cc3504462d2e45afe69182b0aac64, type: 3}
       propertyPath: m_RootOrder
       value: 5

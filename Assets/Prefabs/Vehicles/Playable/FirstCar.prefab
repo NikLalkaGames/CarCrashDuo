@@ -141,6 +141,7 @@ MonoBehaviour:
   _frontRightWheeTransform: {fileID: 455660}
   _rearLeftWheelTransform: {fileID: 1151242860142966672}
   _rearRightWheelTransform: {fileID: 6637459201752230344}
+  _carRuntimeSet: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
 --- !u!65 &2821227768462129885
 BoxCollider:
   m_ObjectHideFlags: 0

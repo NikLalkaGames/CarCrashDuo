@@ -464,6 +464,7 @@ MonoBehaviour:
   _frontRightWheeTransform: {fileID: 424586}
   _rearLeftWheelTransform: {fileID: 492398}
   _rearRightWheelTransform: {fileID: 470434}
+  _carRuntimeSet: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
 --- !u!54 &7683283155442004352
 Rigidbody:
   m_ObjectHideFlags: 0

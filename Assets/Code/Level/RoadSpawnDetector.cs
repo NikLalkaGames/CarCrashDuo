@@ -13,10 +13,22 @@ namespace Code.Level
         private void OnTriggerEnter(Collider other)
         {
             if (!other.CompareTag("Player")) return;
+            
             _detectionCounter++;
-            if (_detectionCounter < _numberOfCars) return;
-            _roadSpawner.MoveRoadBack();
-            _detectionCounter = 0;
+
+            if (_detectionCounter == _numberOfCars)
+            {
+                
+            }
+
+            if (_detectionCounter >= _numberOfCars)
+            {
+                _roadSpawner.MoveRoadBack();
+                _detectionCounter = 0;
+            }
+
+
+            // instantiate requirement = Car1.transform - Car2.transform > roadLength
         }
     }
 }
