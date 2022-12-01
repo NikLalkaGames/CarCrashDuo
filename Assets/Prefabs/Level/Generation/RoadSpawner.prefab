@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 824917929}
   - component: {fileID: 824917928}
   m_Layer: 0
-  m_Name: LevelStream
+  m_Name: RoadSpawner
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

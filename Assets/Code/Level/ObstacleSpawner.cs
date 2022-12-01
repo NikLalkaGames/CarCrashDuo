@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using Code.Common.Containers;
 using Code.Common.ObjectPool;
 using UnityEngine;
@@ -11,7 +12,7 @@ namespace Code.Level
         private float _timer = 0f;
         
         [SerializeField] private List<GameObject> _obstaclePrefabCollection = new List<GameObject>();
-        [SerializeField] private Transform _levelTransform;
+        [SerializeField] private PlayerPlaces _playerPlaces;
         
         [SerializeField] private float _timeUntilNextSpawn;     // spawn rate
         [SerializeField] private float _generationOffset;                 // offset of vehicle for generation obstacles
@@ -66,7 +67,7 @@ namespace Code.Level
 
         private Vector3 GetSpawnPosition(float offset)
         {
-            var vp = _levelTransform.position;
+            var vp = _playerPlaces.PlayerCarsOrdered.First().position;
             return new Vector3(Random.Range(leftHorizontalBoundary, RightHorizontalBoundary), vp.y, vp.z + offset);
         }
     }
