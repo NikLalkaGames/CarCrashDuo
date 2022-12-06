@@ -340,6 +340,7 @@ GameObject:
   - component: {fileID: 5357299149773449884}
   - component: {fileID: 7683283155442004352}
   - component: {fileID: 5823683617164292005}
+  - component: {fileID: 798559258}
   m_Layer: 6
   m_Name: SecondCar
   m_TagString: Player
@@ -464,7 +465,6 @@ MonoBehaviour:
   _frontRightWheeTransform: {fileID: 424586}
   _rearLeftWheelTransform: {fileID: 492398}
   _rearRightWheelTransform: {fileID: 470434}
-  _carRuntimeSet: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
 --- !u!54 &7683283155442004352
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -494,6 +494,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.5915313, y: 2.1453218, z: 5.323662}
   m_Center: {x: -0.01503396, y: 1.4675517, z: 0}
+--- !u!114 &798559258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ee93bba359e466fb2ed60b77338e366, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _carRuntimeSet: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
 --- !u!1 &789035826603836384
 GameObject:
   m_ObjectHideFlags: 0

@@ -16,8 +16,8 @@ namespace Code.Level
         
         private void Update()
         {
-            _uiPlayerPos.UpdatePositions(PlayerCars.Items.First().position.z > PlayerCars.Items.Last().position.z ? 1 : 2, 
-                PlayerCars.Items.Last().position.z > PlayerCars.Items.First().position.z ? 1 : 2);
+            _uiPlayerPos.UpdatePositions(PlayerCars.Items.Last().position.z > PlayerCars.Items.First().position.z ? 1 : 2, 
+                PlayerCars.Items.First().position.z > PlayerCars.Items.Last().position.z ? 1 : 2);
         }
 
     }
