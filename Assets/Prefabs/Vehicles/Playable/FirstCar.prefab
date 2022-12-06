@@ -130,7 +130,7 @@ MonoBehaviour:
   HORIZONTAL: Horizontal
   VERTICAL: Vertical
   BREAK_KEY_CODE: 32
-  _motorForce: 1800
+  _motorForce: 2000
   _breakForce: 3000
   _maxSteerAngle: 30
   _frontLeftWheelCollider: {fileID: 5340103685002592255}

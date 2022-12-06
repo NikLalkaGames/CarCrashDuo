@@ -30,18 +30,6 @@ namespace Code.PlayerControl
         [SerializeField] private Transform _rearLeftWheelTransform;
         [SerializeField] private Transform _rearRightWheelTransform;
 
-        [SerializeField] private TransformRuntimeSet _carRuntimeSet;
-        
-        private void OnEnable()
-        {
-            _carRuntimeSet.Add(transform);    
-        }
-        
-        private void OnDisable()
-        {
-            _carRuntimeSet.Remove(transform);    
-        }
-
         private void FixedUpdate()
         {
             GetInput();

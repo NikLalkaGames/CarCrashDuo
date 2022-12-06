@@ -12,8 +12,6 @@ namespace Code.Level
 
         [SerializeField] private UILevelTimer _uiLevelTimerFirst;
         
-        [SerializeField] private UILevelTimer _uiLevelTimerSecond;
-        
         // restart level screen
 
         private void Start()
@@ -24,7 +22,6 @@ namespace Code.Level
         private void Update()
         {
             _uiLevelTimerFirst.UpdateTime(_timer);
-            _uiLevelTimerSecond.UpdateTime(_timer);
             if (_timer > 0)
             {
                 _timer -= Time.deltaTime;
