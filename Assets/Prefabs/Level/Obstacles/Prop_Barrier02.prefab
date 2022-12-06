@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1990293589769715444}
   - component: {fileID: 1990293589875995056}
   - component: {fileID: 2453995667654605850}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prop_Barrier02
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

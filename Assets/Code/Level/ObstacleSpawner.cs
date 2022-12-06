@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Code.Common.Containers;
 using Code.Common.ObjectPool;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -9,7 +10,8 @@ namespace Code.Level
     public class ObstacleSpawner : MonoBehaviour
     {
         private float _timer = 0f;
-        
+
+        [SerializeField] private PoolContainer _poolContainer;
         [SerializeField] private List<GameObject> _obstaclePrefabCollection = new List<GameObject>();
         [SerializeField] private PlayerPlaces _playerPlaces;
         
@@ -22,7 +24,12 @@ namespace Code.Level
 
         private void Start()
         {
-            InitialGeneration();
+            foreach (var poolModel in _poolContainer.Pools)
+            {
+                _obstaclePrefabCollection.Add(poolModel.Prefab);
+            }
+            
+            // InitialGeneration();
         }
         
         private void InitialGeneration()
@@ -59,7 +66,7 @@ namespace Code.Level
             PoolManager.SpawnObject(
                 GetRandomObject(),
                 GetSpawnPosition(offset),
-                Quaternion.identity);
+                Quaternion.AngleAxis(180, Vector3.up));
         }
         
         private GameObject GetRandomObject() => _obstaclePrefabCollection[Random.Range(0, _obstaclePrefabCollection.Count)];

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SpawnTrigger
   - Obstacle
+  - Fire
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - Water
   - UI
   - Player
-  - FrontAngle
   - Wheel
+  - Obstacle
   - 
   - 
   - 

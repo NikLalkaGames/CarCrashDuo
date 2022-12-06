@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 492398}
   - component: {fileID: 3383734}
   - component: {fileID: 2382754}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Wheel_rl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 420582}
   - component: {fileID: 3395236}
   - component: {fileID: 2394562}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Wheel_fl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 424586}
   - component: {fileID: 3332162}
   - component: {fileID: 2350806}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Wheel_fr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,7 +254,7 @@ GameObject:
   - component: {fileID: 470434}
   - component: {fileID: 3341378}
   - component: {fileID: 2319836}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Wheel_rr
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -516,7 +516,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5525523679945918105}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: WheelColliders
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -550,7 +550,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3488077783731920109}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: WheelTransforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -584,7 +584,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4425857774738112053}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Wheels
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -617,6 +617,10 @@ PrefabInstance:
     - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_Name
       value: WC_rl
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9200818162564353588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_RootOrder
@@ -685,6 +689,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WC_fr
       objectReference: {fileID: 0}
+    - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9200818162564353588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -752,6 +760,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: WC_fl
       objectReference: {fileID: 0}
+    - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 9200818162564353588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -818,6 +830,10 @@ PrefabInstance:
     - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_Name
       value: WC_rr
+      objectReference: {fileID: 0}
+    - target: {fileID: 1242420102554773588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 9200818162564353588, guid: d09b1b8dff5512347b77827239faa453, type: 3}
       propertyPath: m_RootOrder

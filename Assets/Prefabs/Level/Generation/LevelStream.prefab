@@ -168,10 +168,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1822330091003098167}
     m_Modifications:
-    - target: {fileID: 7537155155440163088, guid: efdd4e8cf65eedc45a24d29f14414329, type: 3}
-      propertyPath: _generationOffset
-      value: 200
-      objectReference: {fileID: 0}
     - target: {fileID: 7537155155440163089, guid: efdd4e8cf65eedc45a24d29f14414329, type: 3}
       propertyPath: m_RootOrder
       value: 2

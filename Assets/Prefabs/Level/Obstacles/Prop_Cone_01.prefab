@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 515175755742097772}
   - component: {fileID: 515175756010896731}
   - component: {fileID: -2129281006773081401}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prop_Cone_01
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

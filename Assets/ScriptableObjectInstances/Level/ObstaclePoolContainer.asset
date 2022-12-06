@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1b54381e0b72428490a752a0a38d3eaa, type: 3}
-  m_Name: PoolContainer
+  m_Name: ObstaclePoolContainer
   m_EditorClassIdentifier: 
   Pools:
   - {fileID: 11400000, guid: 93da5fc40a265304f9bd1ffdfe831530, type: 2}
   - {fileID: 11400000, guid: c08a0f689db6c894fa0e291174ef6ad4, type: 2}
   - {fileID: 11400000, guid: fe3259d0f373dd941b7994f7b688a152, type: 2}
   - {fileID: 11400000, guid: 97d20c91e270e0a4dbc70c38c65c7b6d, type: 2}
-  - {fileID: 11400000, guid: aa919f50e3e1bfb43a4d3a6ed4c20548, type: 2}
+  - {fileID: 11400000, guid: fcc0032aaa587434d8c20b8b59d06ac3, type: 2}

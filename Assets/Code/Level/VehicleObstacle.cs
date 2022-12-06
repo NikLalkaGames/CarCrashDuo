@@ -1,10 +1,8 @@
-using System;
 using UnityEngine;
 
-namespace Code.PlayerControl
+namespace Code.Level
 {
-    [Obsolete]
-    public class VehicleController : MonoBehaviour
+    public class VehicleObstacle : MonoBehaviour
     {
         [SerializeField] private float _turnSpeed;
 
@@ -18,8 +16,8 @@ namespace Code.PlayerControl
                            transform.TransformDirection(Time.fixedDeltaTime * _forwardSpeed * Vector3.forward);
             _rigidbody.MovePosition(newPos);
 
-            var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * Input.GetAxis("Horizontal"), Vector3.up);
-            _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
+            // var deltaRotation = Quaternion.AngleAxis( Time.fixedDeltaTime * _turnSpeed * Input.GetAxis("Horizontal"), Vector3.up);
+            // _rigidbody.MoveRotation(_rigidbody.rotation * deltaRotation);
         }
     }
 }
