@@ -1,4 +1,6 @@
-﻿using TMPro;
+﻿using System;
+using Code.Common;
+using TMPro;
 using UnityEngine;
 
 namespace Code.UI
@@ -7,12 +9,13 @@ namespace Code.UI
     {
         [SerializeField] private TextMeshProUGUI _scoreUIValue;
 
-        private int _scoreValue;
-
+        [SerializeField] private PlayerInfo _playerInfo;
+        
         public void Start() => _scoreUIValue.text = "0";
 
-        public void IncrementScore() => _scoreValue++;
-
-        public void UpdateScore() => _scoreUIValue.text = $"{_scoreValue}";
+        private void Update()
+        {
+            _scoreUIValue.text = $"{_playerInfo.Score}";
+        }
     }
 }

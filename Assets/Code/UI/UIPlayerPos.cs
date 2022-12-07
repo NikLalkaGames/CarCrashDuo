@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using Code.Common;
+using TMPro;
 using UnityEngine;
 
 namespace Code.UI
@@ -9,11 +10,12 @@ namespace Code.UI
         
         [SerializeField] private TextMeshProUGUI _secondPlayerPos;
 
+        [SerializeField] private PlayerInfo[] _playerInfos;
 
-        public void UpdatePositions(int firstPlayerPos, int secondPlayerPos)
+        public void Update()
         {
-            _firstPlayerPos.text = $"{firstPlayerPos}";
-            _secondPlayerPos.text = $"{secondPlayerPos}";
+            _firstPlayerPos.text = $"{_playerInfos[0].Place}";
+            _secondPlayerPos.text = $"{_playerInfos[1].Place}";
         }
     }
 }

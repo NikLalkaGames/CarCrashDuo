@@ -1,17 +1,17 @@
-﻿using Code.UI;
+﻿using Code.Common;
+using Code.UI;
 using UnityEngine;
 
 namespace Code.Managers
 {
     public class ScoreCounter : MonoBehaviour
     {
-        [SerializeField] private UIScore _uiScore;
-
+        [SerializeField] private PlayerInfo _playerInfo;
+        
         private void OnCollisionEnter(Collision other)
         {
             if (!other.collider.CompareTag("Obstacle")) return;
-            _uiScore.IncrementScore();
-            _uiScore.UpdateScore();
+            _playerInfo.Score++;
         }
     }
 }

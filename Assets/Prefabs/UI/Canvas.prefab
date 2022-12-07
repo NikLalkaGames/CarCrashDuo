@@ -183,7 +183,7 @@ GameObject:
   - component: {fileID: 4143989677993685348}
   - component: {fileID: 7042244397983707154}
   m_Layer: 5
-  m_Name: Timer 1
+  m_Name: LevelTimer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -428,6 +428,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _firstPlayerPos: {fileID: 2572988656625805444}
   _secondPlayerPos: {fileID: 6174816061304853817}
+  _playerInfos:
+  - {fileID: 11400000, guid: deeac144b044e4a49b1063e0ded47e21, type: 2}
+  - {fileID: 11400000, guid: af2bad5ca577a86448e40ba6bb3796de, type: 2}
 --- !u!114 &408743488
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -590,7 +593,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3818829396285012154, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
       propertyPath: m_Name
-      value: PlayerInfo
+      value: Player Info Red
       objectReference: {fileID: 0}
     - target: {fileID: 7675600189100903532, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
       propertyPath: m_Pivot.x
@@ -676,6 +679,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9029053566372121816, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
+      propertyPath: _playerInfo
+      value: 
+      objectReference: {fileID: 11400000, guid: deeac144b044e4a49b1063e0ded47e21, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
 --- !u!224 &5397999010811602263 stripped
@@ -703,7 +710,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6292770791490351389, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
       propertyPath: m_Name
-      value: HealthBarSecondPlayer
+      value: HealthBarBlue
       objectReference: {fileID: 0}
     - target: {fileID: 6292770791490351390, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
       propertyPath: m_Pivot.x
@@ -789,26 +796,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6292770791490351391, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6292770791490351391, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6292770791490351391, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6292770791490351391, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6292770791490351391, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6292770791645319088, guid: 98b770c4bbb8fd142952bc4d750e4d83, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0
@@ -833,7 +820,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3818829396285012154, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
       propertyPath: m_Name
-      value: PlayerInfo (1)
+      value: Player Info Blue
       objectReference: {fileID: 0}
     - target: {fileID: 7675600189100903532, guid: 62a7f71466f10544cbe04bc7499d0cbf, type: 3}
       propertyPath: m_Pivot.x
@@ -944,26 +931,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 9164055566866467426}
     m_Modifications:
-    - target: {fileID: 178328602071229176, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
-      propertyPath: m_Interactable
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 178328602071229176, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 178328602071229176, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 178328602071229176, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 178328602071229176, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
-      propertyPath: m_Colors.m_DisabledColor.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 178328602071229177, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1050,7 +1017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 178328602071229178, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
       propertyPath: m_Name
-      value: HealthBarFirstPlayer
+      value: HealthBarRed
       objectReference: {fileID: 0}
     - target: {fileID: 178328602360290391, guid: 3788960aa6ee3b146a9d4e20c7b4a766, type: 3}
       propertyPath: m_AnchorMax.x

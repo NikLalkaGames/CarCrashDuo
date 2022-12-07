@@ -44,10 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a778b2f122164ef189457d41a9f29f54, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiPlayerPos: {fileID: 0}
   PlayerCars:
   - {fileID: 0}
   - {fileID: 0}
+  _playerInfos:
+  - {fileID: 11400000, guid: deeac144b044e4a49b1063e0ded47e21, type: 2}
+  - {fileID: 11400000, guid: af2bad5ca577a86448e40ba6bb3796de, type: 2}
 --- !u!114 &1266617312
 MonoBehaviour:
   m_ObjectHideFlags: 0

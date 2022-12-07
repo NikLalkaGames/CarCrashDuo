@@ -1,18 +1,19 @@
 ﻿using System;
+using System.Collections.Generic;
+using Code.Common;
+using Code.Common.Events;
+using Code.Managers;
 using Code.UI;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Code.Level
 {
     public class LevelProgress : MonoBehaviour
     {
         private float _timer;
-        
         [SerializeField] private float _levelTime;     // 120
-
         [SerializeField] private UILevelTimer _uiLevelTimerFirst;
-        
-        // restart level screen
 
         private void Start()
         {
@@ -27,9 +28,8 @@ namespace Code.Level
                 _timer -= Time.deltaTime;
                 return;
             }
-            
-            
-            // go to finish scene
+
+            SceneManager.LoadScene("LevelFinish");
         }
     }
 }

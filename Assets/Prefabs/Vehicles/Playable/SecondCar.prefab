@@ -341,6 +341,7 @@ GameObject:
   - component: {fileID: 7683283155442004352}
   - component: {fileID: 5823683617164292005}
   - component: {fileID: 798559258}
+  - component: {fileID: 5423702902912413328}
   m_Layer: 6
   m_Name: SecondCar
   m_TagString: Player
@@ -424,7 +425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ea62e1f2384c3f8093fd7836e02e37, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _uiScore: {fileID: 0}
+  _playerInfo: {fileID: 11400000, guid: af2bad5ca577a86448e40ba6bb3796de, type: 2}
 --- !u!114 &1924971770
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -437,7 +438,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf695aedc27a4a008c7c2290c32c2555, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UIHealth: {fileID: 0}
+  _playerInfo: {fileID: 11400000, guid: af2bad5ca577a86448e40ba6bb3796de, type: 2}
   _maxHealth: 100
 --- !u!114 &5357299149773449884
 MonoBehaviour:
@@ -507,6 +508,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _carRuntimeSet: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
+--- !u!114 &5423702902912413328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 194810}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71f563ca0a084a12bceaf52afe57ae6b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _healthController: {fileID: 1924971770}
 --- !u!1 &789035826603836384
 GameObject:
   m_ObjectHideFlags: 0
