@@ -11,13 +11,13 @@ namespace Code.Level
     {
         [SerializeField] private UIPlayerPos _uiPlayerPos;
 
-        public TransformRuntimeSet PlayerCars;
-        public List<Transform> PlayerCarsOrdered => PlayerCars.Items.OrderByDescending(pc => pc.position.z).ToList();
+        public List<Transform> PlayerCars;
+        public List<Transform> PlayerCarsOrdered => PlayerCars.OrderByDescending(pc => pc.position.z).ToList();
         
         private void Update()
         {
-            _uiPlayerPos.UpdatePositions(PlayerCars.Items.Last().position.z > PlayerCars.Items.First().position.z ? 1 : 2, 
-                PlayerCars.Items.First().position.z > PlayerCars.Items.Last().position.z ? 1 : 2);
+            _uiPlayerPos.UpdatePositions(PlayerCars.First().position.z > PlayerCars.Last().position.z ? 1 : 2,
+                PlayerCars.Last().position.z > PlayerCars.First().position.z ? 1 : 2);
         }
 
     }
