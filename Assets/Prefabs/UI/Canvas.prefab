@@ -170,6 +170,7 @@ MonoBehaviour:
   _countDown: {fileID: 3962423275912349115}
   _tickSound: {fileID: 0}
   _playerCars: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
+  _obstacleSpawner: {fileID: 0}
 --- !u!1 &7977176962682577518
 GameObject:
   m_ObjectHideFlags: 0
@@ -467,6 +468,10 @@ PrefabInstance:
     - target: {fileID: 5042935287082959448, guid: 6d05793ab10c1064ead096ea245841c2, type: 3}
       propertyPath: m_Name
       value: PauseMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5042935287082959448, guid: 6d05793ab10c1064ead096ea245841c2, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5042935287082959451, guid: 6d05793ab10c1064ead096ea245841c2, type: 3}
       propertyPath: m_Pivot.x

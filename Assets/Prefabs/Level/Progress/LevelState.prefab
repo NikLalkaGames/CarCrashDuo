@@ -45,7 +45,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiPlayerPos: {fileID: 0}
-  PlayerCars: {fileID: 11400000, guid: 1141f650578b8874aa48790fd22f99da, type: 2}
+  PlayerCars:
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!114 &1266617312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,4 +62,3 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _levelTime: 120
   _uiLevelTimerFirst: {fileID: 0}
-  _uiLevelTimerSecond: {fileID: 0}

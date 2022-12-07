@@ -808,6 +808,18 @@ PrefabInstance:
       propertyPath: _uiPlayerPos
       value: 
       objectReference: {fileID: 408743492}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.data[0]
+      value: 
+      objectReference: {fileID: 1745614285}
+    - target: {fileID: 469484470079905321, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
+      propertyPath: PlayerCars.Array.data[1]
+      value: 
+      objectReference: {fileID: 798559256}
     - target: {fileID: 469484470079905323, guid: 3611fb3f97b8176498b248b60607bb41, type: 3}
       propertyPath: m_Name
       value: LevelState
